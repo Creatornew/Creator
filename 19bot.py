@@ -2868,7 +2868,7 @@ def bot(op):
 				msg.contentType = 13
 				msg.contentMetadata = {'mid': "u78643d09e42a36836a17cc918963a8b7"}
 				cl.sendMessage(msg)
-				cl.sendText(msg.to,"My Creator ╔═════════════\n║╠➣✍͡➴͜Ĝα₤αηĸ͜͡✫\n╚═════════════\nCakepkan Boss kami,tikung aja\nTrima jasa\nBahagia,in pacar orang\nkelonin bini orang\nBaper tinggal jadian\nSlow respond")
+				cl.sendText(msg.to,"My Creator\n╔═════════════\n║╠➣✍͡➴͜Ĝα₤αηĸ͜͡✫\n╚═════════════\nCakepkan Boss kami,tikung aja\nTrima jasa\nBahagia,in pacar orang\nkelonin bini orang\nBaper tinggal jadian\nSlow respond")
             elif "Id" == msg.text:
                 key = msg.to
                 cl.sendText(msg.to, key)
@@ -3000,7 +3000,7 @@ def bot(op):
             elif "Namelock:off" in msg.text:
                 if msg.to in wait['pname']:
                     cl.sendText(msg.to,"Turn off")
-                     del wait['pname'][msg.to]
+                    del wait['pname'][msg.to]
                 else:
                     cl.sendText(msg.to,"Already")
 					
@@ -3743,7 +3743,7 @@ def bot(op):
                 print "[Command]Speed palsu executed"
             elif ".speed" in msg.text:
                 time.sleep(0.5)
-                cl.sendText(msg.to, "Sek lurr")
+                cl.sendText(msg.to, "Sek boss")
                 start = time.time()
                 time.sleep(2.32)
                 elapsed_time = time.time() - start
@@ -4672,7 +4672,7 @@ def bot(op):
                 start = time.time()
                 cl.sendText(msg.to, "Access time Waiting...")
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "%s<==Tamii Server" % (elapsed_time))
+                cl.sendText(msg.to, "%s<==●●●●" % (elapsed_time))
 # ----------------- BAN MEMBER BY TAG 2TAG ATAU 10TAG MEMBER
             elif ("Bl " in msg.text):
               if msg.from_ in admin:
