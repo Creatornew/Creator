@@ -13,7 +13,7 @@ from threading import Thread
 
 cl = LINETCR.LINE()
 #cl.login(qr=True)
-cl.login(token='EorEDaDQgLxvf9Ts9wde.wvhydD8HlswGsvWpinOaVG.M0eBPjhJXsCYcoK9NTzJa9tSJ8kGO2uaxfRofSqKGmI=')#ranita
+cl.login(token='EsqjoPdmVN1S4h1llHR2.orQ1PYNjeHufBIT9Bg+WSG.2TIpf7oGqctZtOsWuXiHmtDYLh72UnRMg7zCEsMCwxk=')#ranita
 cl.loginResult()#
 
 #kk = AUTHOR-BOT.LINE()
