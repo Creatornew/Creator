@@ -2884,13 +2884,13 @@ def bot(op):
 					cl.sendText(msg.to,(bctxt))
             elif msg.text in ["Creator"]:
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "u19a6336222efe94acce1b05dd39c0940"}
+					msg.contentMetadata = {'mid': "u78643d09e42a36836a17cc918963a8b7"}
 					cl.sendText(msg.to,"MyCreator")
 					ki.sendMessage(msg)
 					msg.contentType = 13
-					msg.contentMetadata = {'mid': "u19a6336222efe94acce1b05dd39c0940"}
+					msg.contentMetadata = {'mid': "u78643d09e42a36836a17cc918963a8b7"}
 					cl.sendText(msg.to,"MyCreator")
-					cl.sendText(msg.to,"Simanis madu ya!!")
+					cl.sendText(msg.to,"My Creator\n╔═════════════\n╠➣✍͡➴͜Ĝα₤αηĸ͜͡✫\n╚═════════════\nTikung aja boss\nkepoin,jan baper aja")
 					ki.sendMessage(msg)
 #-------------Fungsi Creator Finish-----------------#
             elif "Spam " in msg.text:
