@@ -1298,6 +1298,18 @@ def bot(op):
                     msg.contentMetadata = {'mid': mid}
                     cl.sendMessage(msg)
 #--------------------------------------------------
+            elif msg.text.lower() == 'me':
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': msg.from_}
+                cl.sendMessage(msg)
+                profile = cl.getProfile(receiver)
+                xname = profile.displayName
+                xlen = str(len(xname)+1)
+                msg.contentType = 0
+                msg.text = "@"+xname+" :)"
+                msg.contentMetadata ={'MENTION':'{"MENTIONEES":[{"S":"0","E":'+json.dumps(xlen)+',"M":'+json.dumps(mid)+'}]}','EMTVER':'4'}
+                cl.sendMessage(msg)
+#-----------------------------------------------
             elif msg.text in ["K1"]:
 				if msg.from_ in admin or owner:
 					msg.contentType = 13
