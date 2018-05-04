@@ -49,6 +49,7 @@ helpMessage ="""
 ║╠➣Key4
 ║╠➣Key5
 ║╠➣Key6
+║╠➣Key7
 ║╠➣Say (txt)
 ║╠➣Kr say (text)
 ║╠➣Apakah (text)
@@ -63,6 +64,9 @@ helpMessage ="""
 ║╠➣image
 ║╠➣ig
 ║╠➣youtube
+║╠➣Salam1
+║╠➣Salam2
+║╠➣Salam3
 ║╠➣lirik
 ║╠➣music
 ║╠➣zodiAK
@@ -81,8 +85,8 @@ helpMessage ="""
 ║╠➣Sebut (tagall)
 ║╠➣Absen
 ║╠➣Gift
-║╠➣Galank pergi (ngeluarkan bot)
-║╠➣Galank pergi (ngeluarkan bot)
+║╠➣Bot bye (ngeluarkan bot)
+║╠➣!bye all (ngeluarkan bot)
 ║╚════════════
 ║   UNTUK PUBLIK
 ║ SILAHKAN GUNAKAN
@@ -614,7 +618,7 @@ def mention(to,nama):
         aa += """{"S":"""+json.dumps(str(strt))+""","E":"""+json.dumps(str(akh))+""","M":"""+json.dumps(mm)+"},"""
         strt = strt + 6
         akh = akh + 4
-        bb += "► @c \n"
+        bb += "● @c \n"
     aa = (aa[:int(len(aa)-1)])
     msg = Message()
     msg.to = to
@@ -636,7 +640,7 @@ def bot(op):
         if op.type == 13:
             if wait["auto"] == True:
                 cl.acceptGroupInvitation(op.param1)
-                cl.sendText(op.param1, "Terima Kasih Telah Invite 👉☆º°˚˚☆✰ 闩나丁口尺 阝口丁丂 ✰☆º°˚˚☆（＾ω＾）\n\nby «αzнυяα✍ ⭐👈 »»» http://line.me/ti/p/JZYFFM8TRk «««\n\nSilahkan ketik [Help],dan gunakan dgn bijak")
+                cl.sendText(op.param1, "Terima Kasih Telah Invite ●тєαм ѕℓα¢ĸвσт●\nketik ●Help● Untuk Menu bot\n\nJika terjadi sesuatu\nsilahkan hubungi owner bot kami\n╔═════════════\n╠➣✍͡➴͜Ĝα₤αηĸ͜͡✫\n╚═════════════\nhttp://line.me/ti/p/~fuck.you__\n\nGunakan dengan bijak")
         if op.type == 5:
             if wait["autoAdd"] == True:
                 cl.findAndAddContactsByMid(op.param1)
@@ -1291,12 +1295,26 @@ def bot(op):
 					midd = msg.text.replace("Kr3 invite ","")
 					kc.findAndAddContactsByMid(midd)
 					kc.inviteIntoGroup(msg.to,[midd])
+
+	#--------------------------------------------------
+            #elif msg.text in ["Me"]:
+               # if msg.from_ in admin or owner:
+                    #msg.contentType = 13
+                    #msg.contentMetadata = {'mid': mid}
+                    #cl.sendMessage(msg)
 #--------------------------------------------------
-            elif msg.text in ["Me"]:
-                if msg.from_ in admin or owner:
-                    msg.contentType = 13
-                    msg.contentMetadata = {'mid': mid}
-                    cl.sendMessage(msg)
+            elif msg.text.lower() == "Me":
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': msg.from_}
+                cl.sendMessage(msg)
+                profile = cl.getProfile(receiver)
+                xname = profile.displayName
+                xlen = str(len(xname)+1)
+                msg.contentType = 0
+                msg.text = "@"+xname+" :)"
+                msg.contentMetadata ={'MENTION':'{"MENTIONEES":[{"S":"0","E":'+json.dumps(xlen)+',"M":'+json.dumps(mid)+'}]}','EMTVER':'4'}
+                cl.sendMessage(msg)
+#-----------------------------------------------
 #--------------------------------------------------
             elif msg.text.lower() == 'me':
                 msg.contentType = 13
@@ -2894,7 +2912,7 @@ def bot(op):
 					bctxt = msg.text.replace(".. ","")
 					cl.sendText(msg.to,(bctxt))
 					cl.sendText(msg.to,(bctxt))
-            elif msg.text in ["Creator"]:
+            #elif msg.text in ["Creator"]:
 					msg.contentType = 13
 					msg.contentMetadata = {'mid': "u78643d09e42a36836a17cc918963a8b7"}
 					cl.sendText(msg.to,"MyCreator")
@@ -2904,6 +2922,13 @@ def bot(op):
 					cl.sendText(msg.to,"MyCreator")
 					cl.sendText(msg.to,"My Creator\n╔═════════════\n╠➣✍͡➴͜Ĝα₤αηĸ͜͡✫\n╚═════════════\nTikung aja boss\nkepoin,jan baper aja")
 					ki.sendMessage(msg)
+					
+            elif msg.text in ["Creator","Owner"]:
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': "u78643d09e42a36836a17cc918963a8b7"}
+                cl.sendMessage(msg)
+		        cl.sendText(msg.to,"Majikan Kami\n╔═════════════\n║╠➣✍͡➴͜Ĝα₤αηĸ͜͡✫\n╚═════════════\nCakepkan?Tikung Aja Boss\nkepo,in aja klau gak mau di baperin")
+		
 #-------------Fungsi Creator Finish-----------------#
             elif "Spam " in msg.text:
                 txt = msg.text.split(" ")
@@ -2940,6 +2965,7 @@ def bot(op):
 #                tts.save("hasil.mp3")
 #                cl.sendAudio(msg.to,"hasil.mp3")
 #--------------------
+		
             elif 'wiki ' in msg.text.lower():
                 try:
                     wiki = msg.text.lower().replace("wiki ","")
@@ -4208,7 +4234,7 @@ def bot(op):
 						except:
 							pass
 
-            elif "Galank cium " in msg.text:
+            elif "Bot cium " in msg.text:
                 if msg.from_ in admin or owner or mid:
                     targets = []
                     key = eval(msg.contentMetadata["MENTION"])
@@ -4221,7 +4247,7 @@ def bot(op):
                         except:
                             cl.sendText(msg.to,"Error")
 
-            elif msg.text in ["Galank glist"]: #Melihat List Group
+            elif msg.text in ["Bot glist"]: #Melihat List Group
                 if msg.from_ in owner:
                     gids = cl.getGroupIdsJoined()
                     h = ""
@@ -4238,7 +4264,7 @@ def bot(op):
                       h += "[%s]:%s\n" % (cl.getGroup(i).name,i)
                       cl.sendText(msg.to,h)
 
-            elif "Galank asupka " in msg.text:
+            elif "Bot asupka " in msg.text:
                 if msg.from_ in owner:
                     gid = msg.text.replace("barby asupka ","")
                     if gid == "":
@@ -4251,7 +4277,7 @@ def bot(op):
                         except:
                             cl.sendText(msg.to,"Mungkin saya tidak di dalaam grup itu")
 
-            elif "Galank bye" in msg.text:
+            elif "Bot bye" in msg.text:
                 if msg.from_ in owner:
                     if msg.toType == 2:
                         ginfo = cl.getGroup(msg.to)
