@@ -44,10 +44,10 @@ channel8 = LineChannel(cxb)
 cxb.log("Channel Access Token : " + str(channel8.channelAccessToken))
 
 poll = LinePoll(cl)
-creator = ["u21dc0d6af94f70d298b109f9ffcfc6e0"]
-owner = ["u21dc0d6af94f70d298b109f9ffcfc6e0"]
-admin = ["u21dc0d6af94f70d298b109f9ffcfc6e0"]
-staff = ["u21dc0d6af94f70d298b109f9ffcfc6e0"]
+creator = ["u78643d09e42a36836a17cc918963a8b7"]
+owner = ["u78643d09e42a36836a17cc918963a8b7"]
+admin = ["u78643d09e42a36836a17cc918963a8b7"]
+staff = ["u78643d09e42a36836a17cc918963a8b7"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -73,11 +73,15 @@ responsename3 = kc.getProfile().displayName
 responsename4 = km.getProfile().displayName
 responsename5 = kb.getProfile().displayName
 
-setowner ="""╔═════════════\n╠۞➢sᴇʟғʙᴏᴛ-ᴍᴇɴᴜ\n╠═════════════
+setowner ="""
+╭══════╬╬═══════╮
+   sᴇʟғʙᴏᴛ-ᴍᴇɴᴜ
+╰══════╬╬═══════╯
+╭══════╬╬═══════╮
 ╠۞➢ Me
 ╠۞➢ Mid
-╠۞➢ Mid ۞➢ @
-╠۞➢ Like ۞➢ @
+╠۞➢ Mid @
+╠۞➢ Like @
 ╠۞➢ Url
 ╠۞➢ Open
 ╠۞➢ Close
@@ -87,20 +91,22 @@ setowner ="""╔═════════════\n╠۞➢sᴇʟғʙᴏ�
 ╠۞➢ Status
 ╠۞➢ Sp
 ╠۞➢ Rspeed
-╠۞➢ Come
-╠۞➢ Ombye
+╠۞➢ Masuk
+╠۞➢ Pamit
 ╠۞➢ Leave all
 ╠۞➢ Me leave
 ╠۞➢ Responame
-╠═══════════════
-╠═۞➢ᴀᴅᴍɪɴ ᴍᴇɴᴜ 
-╠═══════════════
-╠۞➢ Kick ۞➢ @
-╠۞➢ Kick1 ۞➢ @
+╰══════╬╬═══════╯
+╭══════╬╬═══════╮
+     ᴀᴅᴍɪɴ ᴍᴇɴᴜ 
+╰══════╬╬═══════╯
+╭══════╬╬═══════╮
+╠۞➢ Kick @
+╠۞➢ Kick1 @
 ╠۞➢ Mayhem
 ╠۞➢ Blc
-╠۞➢ Ban ۞➢ @
-╠۞➢ Unban ۞➢ @
+╠۞➢ Ban @
+╠۞➢ Unban @
 ╠۞➢ Ban:on
 ╠۞➢ Ban:off
 ╠۞➢ Unban:on
@@ -109,48 +115,52 @@ setowner ="""╔═════════════\n╠۞➢sᴇʟғʙᴏ�
 ╠۞➢ Clearban
 ╠۞➢ Glist
 ╠۞➢ Friendlist
-╠۞➢ B1: ۞➢ Text
-╠۞➢ B2: ۞➢ Text
-╠۞➢ B3: ۞➢ Text
-╠۞➢ B4: ۞➢ Text
-╠۞➢ B5: ۞➢ Text
-╠۞➢ Myname: ۞➢ Text
+╠۞➢ B1: Text
+╠۞➢ B2: Text
+╠۞➢ B3: Text
+╠۞➢ B4: Text
+╠۞➢ B5: Text
+╠۞➢ Myname: Text
 ╠۞➢ Restart
 ╠۞➢ Informasi
 ╠۞➢ Bup
 ╠۞➢ Gup
 ╠۞➢ Me up
 ╠۞➢ Remove
-╠════════════════
-╠═۞➢sᴇᴛᴛɪɴɢ ᴍᴇɴᴜ 
-╠════════════════
-╠۞➢ Sider ۞➢ on/off
-╠۞➢ Lurking ۞➢ on/off
+╰══════╬╬═══════╯
+╭══════╬╬═══════╮
+     sᴇᴛᴛɪɴɢ ᴍᴇɴᴜ 
+╰══════╬╬═══════╯
+╭══════╬╬═══════╮
+╠۞➢ Sider on/off
+╠۞➢ Lurking on/off
 ╠۞➢ Lurkers
 ╠۞➢ Cek sider
 ╠۞➢ Cek spam
 ╠۞➢ Cek pesan
 ╠۞➢ Cek respon
 ╠۞➢ Cek welcome
-╠۞➢ Set sider: ۞➢ Text
-╠۞➢ Set spam: ۞➢Text
-╠۞➢ Set pesan: ۞➢ Text
-╠۞➢ Set respon: ۞➢ Text
-╠۞➢ Set welcome: ۞➢ Text
-╠۞➢ Sticker ۞➢ on/off
-╠۞➢ Contact ۞➢ on/off
-╠۞➢ Autojoin ۞➢ on/off
-╠۞➢ Autoadd ۞➢on/off
-╠۞➢ Autoleave ۞➢ on/off
-╠۞➢ Welcome ۞➢ on/off
-╠۞➢ Autorespon ۞➢on/off
-╠۞➢ Gift: ۞➢ Mid ۞➢ Jumlah
-╠۞➢ Spam: ۞➢ Mid ۞➢ Jumlah
-╠══════════════════
-╠۞➢ [ sᴇʟғʙᴏᴛ ᴠ.1 ]
-╠═۞➢ [ ᴄʀᴇᴀᴛᴇᴅ ʙʏ : ]
-╠۞➢ [ ᴄʀᴀᴢʏ ˣ10 ᏴϴͲ ]
-╚══════════════════
+╠۞➢ Set sider: Text
+╠۞➢ Set spam: Text
+╠۞➢ Set pesan: Text
+╠۞➢ Set respon: Text
+╠۞➢ Set welcome: Text
+╠۞➢ Sticker on/off
+╠۞➢ Contact on/off
+╠۞➢ Autojoin on/off
+╠۞➢ Autoadd on/off
+╠۞➢ Autoleave on/off
+╠۞➢ Welcome on/off
+╠۞➢ Autorespon on/off
+╠۞➢ Gift: Mid Jumlah
+╠۞➢ Spam: Mid Jumlah
+╰══════╬╬═══════╯
+╭══════╬╬═══════╮
+╠⎆ CRΣΔTΩR βΨ:
+╠⎆ 『✍͡➴͜Ĝα₤αηĸ͜͡✫』
+╠⎆ sᴜᴘᴘᴏʀᴛᴇᴅ ʙʏ  : 
+╠⎆ TΣΔM SLΔCҜβΩT
+╰══════╬╬═══════╯
 """
 
 helpMessage ="""╔══════════════\n╠═۞➢ᴄʀᴀᴢʏ ˣ10 ᏴϴͲ\n╠══════════════\n╠═۞➢ʙᴏᴛ ᴜsᴇʀ\n╠══════════════
@@ -358,8 +368,8 @@ cctv = {
 
 #with open('creator.json', 'r') as fp:
     #creator = json.load(fp)
-with open('owner.json', 'r') as fp:
-    owner = json.load(fp)
+with open('Owner.json', 'r') as fp:
+    Owner = json.load(fp)
 
 Setbot = codecs.open("setting.json","r","utf-8")
 Setmain = json.load(Setbot)
