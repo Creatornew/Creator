@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*- 
-from LINEPY import *
+from PRANKBOTS import *
 from multiprocessing import Pool, Process
 from time import sleep
 import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia
@@ -8,37 +8,37 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import youtube_dl
 
-cl = LineClient(authToken='EqoACWTXWHgMOmbmXhi0.iDWnAVLpCnkySqN5+8+g4a.vG/08kuNJWZmJXfOljLv1qd4S4zEz0kMBwQRMdIsSLM=')
+cl = LineClient(authToken='EtuzfGWBAoaRxGiKdd07.Egq9cEqQnOnQf8YrIwoOTW.xYMmiR7oPmoTdnZnN+qgojuXNjbp1oQGA10HpgYv54g=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken='EqQ5vd6Eo6qlQ1TMYYT4.xCn1sR19CX3b/hzAOQad1a.h2jUViTBZnHdwrsZod/7BxajcK7cKOCF3UQ3o/YsrOU=')
+ki = LineClient(authToken='EttW1Y6AqNyl3ua70one.wvhydD8HlswGsvWpinOaVG.DqF8rILhn9bQCnE5XsQ0Xev+1laiSQSm0UzZaf0mGuE=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient(authToken='EqGFmKymtL61WDnpLKLd.N9EDuhv0D+WWRC9JgLKA7q.jqJYeMs2oHXCo51U2GMkQvEnETZtC8dBESu00uPranc=')
+kk = LineClient(authToken='EtTDgs9d0uKoqk2Ae2qa.3svWLda5Jb1maVIdRVif6G.Ny7IYl9KLC19BHTMgMfXvCO9MluICDGLOoxwJcNAvnA=')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient(authToken='EqvgQQHytYqhhWMxb86e.5qhfEXtLYzO2gxEXfXP2+G.4btcXfQk0lK7K/tttnjD2c7mERYfyt4GY7DAkvuxZN0=')
+kc = LineClient(authToken='EtjiDUWk3ZhPeh11COd3.eYIoClpI2sl2hRSJw7q6SW.DQbuwOvFVqSlWBuZ76nuRrAKMdv647Bij4n+kA55y/8=')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-km = LineClient(authToken='EqiAMMqzLLzwHQAbc1Uc.18Fh16dEM4onVDNF408E7a.p9C4htuvxmUMS1uu1TrqeXixAkW+CUdBoSSCd/XZpVA=')
+km = LineClient(authToken='Et4HFdhr2dm5W0TzDnM8.LetmZ3b3S8xsvXte6ExxAa.nNj/KyxQFyKawyA1B4+0Lz7vJftu1BpbrDVltenUB+Q=')
 km.log("Auth Token : " + str(km.authToken))
 channel4 = LineChannel(km)
 km.log("Channel Access Token : " + str(channel4.channelAccessToken))
 
-kb = LineClient(authToken='EqeUG495fR55EFDnXwA9.Ub2p7vIyL6OKxSdyvNZhEq.3kjUV3Fl4yUucpKQWkAgRcgXdt3TJ31iH1sxSElxxDc=')
+kb = LineClient(authToken='Et2XZFt7j3ESc4nzd0t8.yShUITzJjuINW9CsoWQVca.1/mt0HrGs7n3tDZZOiZ187ADtnHedOhHmymyi1hhdS0=')
 kb.log("Auth Token : " + str(kb.authToken))
 channel5 = LineChannel(kb)
 kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
 
-cxb = LineClient(authToken='Eq32wRAidaMmm58zmC07.zoiHkyz6WhVmQOcdCvz0fW.y+GAbkK8uOHIBpRgE1r0vdEbzXlFWdwU6GS1BwJZ0Uk=')
+cxb = LineClient(authToken='EtBnZzeUtjYrSBDqKJIa.WQ7xJwYTy17gLrjSzVBpMG.g8VAIY7L7dC592G2CkuFvPXaZkDtNcNgQu4KLHr+y+g=')
 cxb.log("Auth Token : " + str(cxb.authToken))
 channel8 = LineChannel(cxb)
 cxb.log("Channel Access Token : " + str(channel8.channelAccessToken))
@@ -368,7 +368,7 @@ wait = {
     "mention":"Masuk kuy awas dingin",
     "Respontag":"Njirrr tag pc napa",
     "welcome":"Wellcome to",
-    "comment":"Like By : ᴄʀᴀᴢʏ ˣ10 ᏴϴͲ",
+    "comment":"Like By : ●TΣΔM SLΔCҜβΩT●",
     "message":"Thanks for add me 😃",
     }
 
@@ -2345,13 +2345,13 @@ def bot(op):
                  if msg._from in owner or msg._from in admin or msg._from in staff:
                     speed = "0.00072476863861083984 Detik","0.00066165924072265625 Detik","0.0006737709045410156 Detik","0.0005425930023193359 Detik","0.006354093551635742 Detik","0.00064165592193603516 Detik","0.000640559196472168 Detik","0.0007369041442871094 Detik","0.0017087697982788086 Detik","0.00075762271881103516 Detik","0.00069200992584228516 Detik","0.0011708498001098633 Detik"
                     text = random.choice(speed)
-                    cl.sendMessage(msg.to, "Proges speed...")
+                    cl.sendMessage(msg.to, "[̲̅_̲̅_̲̅_̲̅_̲̅] 1O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 2O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 3O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 4O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 5O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 6O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 7O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 8O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 9O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 100%")
                     cl.sendMessage(msg.to, str(text))
                elif text.lower() == 'speed':
                  if msg._from in owner or msg._from in admin or msg._from in staff:
                     speed = "0.00072476863861083984 Detik","0.00066165924072265625 Detik","0.0006737709045410156 Detik","0.0005425930023193359 Detik","0.0006354093551635742 Detik","0.00064165592193603516 Detik","0.000640559196472168 Detik","0.0007369041442871094 Detik","0.0017087697982788086 Detik","0.00075762271881103516 Detik","0.00069200992584228516 Detik","0.0011708498001098633 Detik"
                     text = random.choice(speed)
-                    cl.sendMessage(msg.to, "Progres speed...")
+                    cl.sendMessage(msg.to, "[̲̅_̲̅_̲̅_̲̅_̲̅] 1O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 2O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 3O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 4O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 5O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 6O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 7O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 8O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 9O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 100%")
                     cl.sendMessage(msg.to, str(text))
                elif text.lower() == 'sp1':
                  if msg._from in owner or msg._from in admin or msg._from in staff:
@@ -2365,15 +2365,15 @@ def bot(op):
                     text2 = random.choice(speed2)
                     text3 = random.choice(speed3)
                     text4 = random.choice(speed4)
-                    ki.sendMessage(msg.to, "Progres speed...")
+                    ki.sendMessage(msg.to, "[̲̅_̲̅_̲̅_̲̅_̲̅] 1O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 2O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 3O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 4O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 5O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 6O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 7O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 8O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 9O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 100%")
                     ki.sendMessage(msg.to, str(text))
-                    kk.sendMessage(msg.to, "Progres speed...")
+                    kk.sendMessage(msg.to, "[̲̅_̲̅_̲̅_̲̅_̲̅] 1O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 2O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 3O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 4O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 5O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 6O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 7O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 8O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 9O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 100%")
                     kk.sendMessage(msg.to, str(text1))
-                    kc.sendMessage(msg.to, "Progres speed...")
+                    kc.sendMessage(msg.to, "[̲̅_̲̅_̲̅_̲̅_̲̅] 1O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 2O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 3O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 4O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 5O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 6O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 7O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 8O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 9O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 100%")
                     kc.sendMessage(msg.to, str(text2))
-                    km.sendMessage(msg.to, "Progres speed...")
+                    km.sendMessage(msg.to, "[̲̅_̲̅_̲̅_̲̅_̲̅] 1O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 2O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 3O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 4O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 5O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 6O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 7O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 8O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 9O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 100%")
                     km.sendMessage(msg.to, str(text3))
-                    kb.sendMessage(msg.to, "Progres speed...")
+                    kb.sendMessage(msg.to, "[̲̅_̲̅_̲̅_̲̅_̲̅] 1O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 2O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 3O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 4O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 5O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 6O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 7O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 8O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 9O%\n[̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅_̲̅] 100%")
                     kb.sendMessage(msg.to, str(text4))
                elif "Kick" in msg.text:
                  if msg._from in owner or msg._from in admin or msg._from in staff:
@@ -2552,7 +2552,7 @@ def bot(op):
                      cl.sendMessage(msg.to,"Bots kosong")
                    else:
                        cl.sendMessage(msg.to,"Wait...")
-                       mc = "۞➢[ᴄʀᴀᴢʏ ˣ10 ᏴϴͲ List ]\n"
+                       mc = "۞➢[●SLΔCҜβΩT● List ]\n"
                        num=1
                        ragets = cl.getContacts(Bots)
                        for mi_d in ragets:
@@ -2973,7 +2973,7 @@ def bot(op):
                                 if ngroup == "":
                                       cl.sendMessage(to, "CONTACT NOT FOUND")
                                 else:
-                                    cl.sendMessage(to, "۞➢ ᴄʀᴀᴢʏ ˣ10 ᏴϴͲ Group\n%s\n"%(ngroup))
+                                    cl.sendMessage(to, "۞➢ ●SLΔCҜβΩT● Group\n%s\n"%(ngroup))
     except Exception as error:
         print (error)
 
